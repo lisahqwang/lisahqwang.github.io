@@ -49,12 +49,11 @@
 								<hr class="first" />
 								<section>
 									<header>
-										<h3><a href="#">Accumsan sed penatibus</a></h3>
+										<h3><a href="#">My two projects</a></h3>
 									</header>
 									<p>
-										Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-										porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-										magna tempus feugiat veroeros.
+										<a href = "https://docs.google.com/document/d/1BJ8NBe7rW2L8J4_L6LWtRfrxgsbCgumYjT59heF7mzY/edit?usp=share_link"> ML Scale Map </a>
+										<a href = "https://docs.google.com/document/d/1zk6aqtoHsXvW0hcxjC16GY2SXpY1gEh6QjtvtTbHOio/edit?usp=sharing"> Tech Temptations </a>
 									</p>
 									<footer>
 										<a href="#" class="button">Learn More</a>
@@ -135,30 +134,25 @@
 									</p>
 									<section>
 										<header>
-											<h3>Ultrices tempor sagittis nisl</h3>
+											<h3>Solving Alignment is difficult. Progress is chaotic. </h3>
 										</header>
 										<p>
-											Nascetur volutpat nibh ullamcorper vivamus at purus. Cursus ultrices porttitor sollicitudin imperdiet
-											at pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget imperdiet venenatis
-											feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis. Fermentum elit
-											fringilla consequat dis arcu. Pellentesque mus tempor vitae pretium sodales porttitor lacus. Phasellus
-											egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
+											I want to be a part of the effort to solve the most pressing X-risk issues in the world. 
+											I may post my kaggle competition entries, ML research summaries, 
+											my attempts at re-implementing methods of Mechanistic Interpretability.
 										</p>
 										<p>
-											Eleifend auctor turpis magnis sed porta nisl pretium. Aenean suspendisse nulla eget sed etiam parturient
-											orci cursus nibh. Quisque eu nec neque felis laoreet diam morbi egestas. Dignissim cras rutrum consectetur
-											ut penatibus fermentum nibh erat malesuada varius.
+											I foresee upskilling first, then be competent enough for SERI MATS, and then going from there. 
 										</p>
 									</section>
 									<section>
 										<header>
-											<h3>Augue euismod feugiat tempus</h3>
+											<h3>I will most likely start with replicating publications</h3>
 										</header>
 										<p>
-											Pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget imperdiet venenatis
-											feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis. Fermentum elit
-											ut nunc urna volutpat donec cubilia commodo risus morbi. Lobortis vestibulum velit malesuada ante
-											egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
+											May update: I believe that I should be able to adopt techniques from SOTA AI research publications and fill in my knowledge gaps in ML. 
+											Some steps may be cloning Pytorch starting with minitorch, implement interpretability tools. 
+											A higher-level goal is to try out MATL https://arxiv.org/abs/1707.07907 and IMPALA https://arxiv.org/abs/1802.01561
 										</p>
 									</section>
 								</article>
@@ -301,39 +295,28 @@
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
 								<header>
-									<h3><a href="#">How likely is deceptive alignment in practice? </a></h3>
+									<h3><a href="#">Heuristics</a></h3>
 								</header>
 								<p>
-									What does ML inductive biases look like?
-									<li>High path-dependence: Different training runs can converge to very different models depending on the particular path taken through model space </li>
-									<li>Low path-dependence: Similar training processes converge to essentially the same, simple solution, regardless of early training dynamics </li>
+									What is a heuristic technique? 
+				
 								</p>
 								<p>
-									Deceptive alignment in the high path-dependence world: Suppose our training process is good enough that, for the model to do well, it has to fully understand what we want--- essentially what you get in the limit of doing enough adversarial training. 
+									An approach to problem-solve by employing a practical method, arriving at a satisfactory solution nonetheless by taking mental shortcuts and easing the cognitive load of making a decision.
 								</p>
 								<p>
-									What does goal attainment look like for models? We ask: 
-									<li>How much marginal performance improvement do we get from each step toward the model class?</li>
-									<li>How many steps are needed until the model becomes a member of that class?</li>
+									Although, these practices are not resistant to cognitive biases. We operate on the terms of bounded rationality, or in my own words, conditional rationality. It is conditional in the sense that within computational boundaries and situational urgency, the behavioral strategic selection is a perfected one. 
 								</p>
 								<p>
-									What are the types of alignment? 
-									<li>Internal alignment: An internally aligned mesa-optimizer is a robustly aligned mesa-optimizer that has internalized the base objective in its mesa-objective. The internal alignment path starts with a proxy-aligned model, followed by stochastic gradient descent (SGD). </li>
-									<li>Corrigible alignment: A corrigibly aligned mesa-optimizer is a robustly aligned mesa-optimizer that has a mesa-objective that “points to” its epistemic model of the base objective.</li>
-									<li>
-										Deceptive alignment: A deceptively aligned mesa-optimizer is a pseudoaligned mesa-optimizer that has enough information about the base objective to seem more fit from the perspective of the base optimizer than it actually is
-										<li>We start with a proxy-aligned model</li>
-										<li>In early training, SGD jointly focused on improving the model's understanding of the world along with improving its proxies </li>
-										<li>Model learns about the training process from its input data ---> diminishing returns to better pointers seem to imply that this would take many consecutive steps with rapidly diminishing performance improvements</li>
-									</li>
+									Heuristics converge on human psychology, delving into self-consciousness and fine-tuning, one decision upon another. Some of the most frequently used examples of heuristics are anchoring and adjustment, which is simply giving a lower or higher bound to allow for systematic adjustments and reasonably deviate from the true value. 
 	
 								</p>
 
 								<p>
-									Simplicity analysis -> M = world_model + optimization_procedure + mesa_objective 
+									Another would be availability or regency heuristic, according to Investopedia, is an issue where people would be more alarmed with a chance event happening than if wasn't recently occurring. This is a misaligned sentiment because independent events do not happen in consistent behavior, but rather stochastically. The possibilities do not change from availability. 
 								</p>
 								<p>
-									Deceptively aligned models have to take the extra step of deducing that they should be trying to play along in the training process. The problem is that speed bias seems uncompetitive. Whether in a world of high or low path dependence, SGD will want to make the model deceptive. We must enact intervention that will change the training dynamics to prevent deception.
+									Another component that may contribute to Heuristics is confirmation bias, which is largely dependent on concurrent existent worldviews which confirm or deny the agent's decision-making tendencies. 
 								</p>
 							</article>
 						</div>
