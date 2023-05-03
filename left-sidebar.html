@@ -297,6 +297,45 @@
 									Deceptively aligned models have to take the extra step of deducing that they should be trying to play along in the training process. The problem is that speed bias seems uncompetitive. Whether in a world of high or low path dependence, SGD will want to make the model deceptive. We must enact intervention that will change the training dynamics to prevent deception.
 								</p>
 							</article>
+			
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">How likely is deceptive alignment in practice? </a></h3>
+								</header>
+								<p>
+									What does ML inductive biases look like?
+									<li>High path-dependence: Different training runs can converge to very different models depending on the particular path taken through model space </li>
+									<li>Low path-dependence: Similar training processes converge to essentially the same, simple solution, regardless of early training dynamics </li>
+								</p>
+								<p>
+									Deceptive alignment in the high path-dependence world: Suppose our training process is good enough that, for the model to do well, it has to fully understand what we want--- essentially what you get in the limit of doing enough adversarial training. 
+								</p>
+								<p>
+									What does goal attainment look like for models? We ask: 
+									<li>How much marginal performance improvement do we get from each step toward the model class?</li>
+									<li>How many steps are needed until the model becomes a member of that class?</li>
+								</p>
+								<p>
+									What are the types of alignment? 
+									<li>Internal alignment: An internally aligned mesa-optimizer is a robustly aligned mesa-optimizer that has internalized the base objective in its mesa-objective. The internal alignment path starts with a proxy-aligned model, followed by stochastic gradient descent (SGD). </li>
+									<li>Corrigible alignment: A corrigibly aligned mesa-optimizer is a robustly aligned mesa-optimizer that has a mesa-objective that “points to” its epistemic model of the base objective.</li>
+									<li>
+										Deceptive alignment: A deceptively aligned mesa-optimizer is a pseudoaligned mesa-optimizer that has enough information about the base objective to seem more fit from the perspective of the base optimizer than it actually is
+										<li>We start with a proxy-aligned model</li>
+										<li>In early training, SGD jointly focused on improving the model's understanding of the world along with improving its proxies </li>
+										<li>Model learns about the training process from its input data ---> diminishing returns to better pointers seem to imply that this would take many consecutive steps with rapidly diminishing performance improvements</li>
+									</li>
+	
+								</p>
+
+								<p>
+									Simplicity analysis -> M = world_model + optimization_procedure + mesa_objective 
+								</p>
+								<p>
+									Deceptively aligned models have to take the extra step of deducing that they should be trying to play along in the training process. The problem is that speed bias seems uncompetitive. Whether in a world of high or low path dependence, SGD will want to make the model deceptive. We must enact intervention that will change the training dynamics to prevent deception.
+								</p>
+							</article>
 						</div>
 					</div>
 
