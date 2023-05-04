@@ -2,7 +2,7 @@ This is a personal website of Lisa Wang. The link is https://lisahqwang.github.i
 
 Credits:
 
-	Demo Images:
+	Images:
 		Michael Domaradzki (md.photomerchant.net)
 
 	Icons:
